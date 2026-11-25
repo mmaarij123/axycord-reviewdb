@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:allowBackup="false" android:supportsRtl="true" android:label="ReviewDB" android:theme="@style/ReviewDbTheme">
+        <service
+            android:name=".ReviewDbDiscoveryService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="mmaarij.axycord.PLUGIN" />
+            </intent-filter>
+            <meta-data android:name="mmaarij.axycord.plugin.ID" android:value="${axycordPluginId}" />
+            <meta-data android:name="mmaarij.axycord.plugin.ENTRYPOINT" android:value="${axycordPluginEntrypoint}" />
+            <meta-data android:name="mmaarij.axycord.plugin.DESCRIPTION" android:value="${axycordPluginDescription}" />
+            <meta-data android:name="mmaarij.axycord.plugin.USES_RESOURCES" android:value="${axycordPluginUsesResources}" />
+            <meta-data android:name="mmaarij.axycord.plugin.AXYCORD_VERSION_MINIMUM" android:value="${axycordPluginVersionMinimum}" />
+            <meta-data android:name="mmaarij.axycord.plugin.AXYCORD_VERSION_MAXIMUM_EXCLUSIVE" android:value="${axycordPluginVersionMaximumExclusive}" />
+            <meta-data android:name="mmaarij.axycord.plugin.LOAD_MODE" android:value="${axycordPluginLoadMode}" />
+            <meta-data android:name="mmaarij.axycord.plugin.PRIORITY" android:value="${axycordPluginPriority}" />
+            <meta-data android:name="mmaarij.axycord.plugin.REQUIREMENTS" android:value="${axycordPluginRequirements}" />
+        </service>
+    </application>
+</manifest>
